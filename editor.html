@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="editor.css">
+</head>
+
+<body>
+    <div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+                <input type="hidden" id="id" value=""> Vendor :
+                <input type="text" id="vendor" value="" readonly>
+                <br>
+                <br> Variant :
+                <input type="text" id="variant" value="" readonly>
+                <br>
+                <br> Stock :
+                <input type="text" id="stock" value="" />
+                <br>
+                <br> Group :
+                <select class="group">
+                    <br>
+                    <br>
+                    <option value="customer1">customer1</option>
+                    <option value="customer2">customer2</option>
+                    <option value="customer3">customer3</option>
+                </select>
+                <br>
+                <br> Valid-from :
+                <input type="text" id="datepicker1">
+                <br>
+                <br> Valid-to :
+                <input type="text" id="datepicker2">
+                <br>
+                <br>
+                <button type="button" id="update">Update</button>
+                <br>
+                <br>
+            </div>
+
+        </div>
+
+
+        <!-- <button type="button" id="edit">Add details/edit</button> -->
+
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Vendor</th>
+                    <th>Variant</th>
+                    <th>Stock</th>
+                    <th>Group</th>
+                    <th>Valid-from</th>
+                    <th>Valid-to</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="editor.js"></script>
+</body>
+
+</html>
